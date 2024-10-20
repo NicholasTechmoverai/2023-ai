@@ -1,0 +1,364 @@
+.thisname{
+    width: 100%;
+    min-height: 80px;
+    box-shadow: 1px 2px 5px black;
+    padding: 4px 10px;
+    box-sizing: border-box;
+}
+.drbright{
+    font-weight: bold;
+    background: linear-gradient(rgb(0, 98, 255),green);
+    padding: 0px 3px;
+    cursor: pointer;
+}
+.aitop{
+    margin-left: 10px;
+    padding: 2px 5px;
+    overflow-wrap:wrap;
+}
+.div .heart-bit{
+    transform: scale(0.5) rotate(-45deg);
+    margin-top: -45px;
+    margin-left: auto;
+    -webkit-transform: scale(0.5) rotate(-45deg);
+    -moz-transform: scale(0.5) rotate(-45deg);
+    -ms-transform: scale(0.5) rotate(-45deg);
+    -o-transform: scale(0.5) rotate(-45deg);
+    margin-right: -9px;
+}
+#ai_responce{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;  
+    padding: 5px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgba(47, 47, 47, 0.242);
+    outline: none;
+    padding: 5px 10px;
+}
+#userinput{
+    width: 100%;
+    min-height: 35px;
+    height: auto;
+    max-height: 55px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgba(47, 47, 47, 0.242);
+    border: 1px solid rgb(67, 65, 65);
+    margin-top: 5px;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-right: 5px;
+}
+.userinteraction{
+    width: 99%;
+    height: 35px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 5px black;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    display: none;
+}
+.interact{
+    box-shadow: 1px 2px 5px black;
+    width: 35px;
+    background-color: rgb(45, 49, 53);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: sticky;
+    bottom: 2%;
+    border: none;
+}
+.bottomhold{
+    position: sticky ;
+    bottom: 0.5%;
+    width: 100%;
+
+}
+.ai-active{
+    position: absolute ;
+    bottom: 0.5%;
+    width: 90%;
+    margin-left: -10px;
+
+}
+#userinputsubnit{
+    color: rgb(229, 231, 229);
+    font-weight: bold;
+    margin-top: 5px;
+    background: linear-gradient(rgb(0, 98, 255),green);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.inlineinput{
+    display: none;
+    flex-direction: row;
+    margin: auto;
+   
+}
+.histhold{
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    max-height: 200px;
+    overflow:hidden ;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    background-color: rgba(47, 47, 47, 0.242);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+    display: flex;
+}
+.histspinner{
+ content: "";
+ position: absolute;
+ background-color: white;
+ width: 5px;
+ height: 40px;
+ overflow: hidden;
+ margin: auto;
+ rotate: 40deg;
+ box-shadow: 2px 3px 20px white;
+ border-radius:20px ;
+ -webkit-border-radius:20px ;
+ -moz-border-radius:20px ;
+ -ms-border-radius:20px ;
+ -o-border-radius:20px ;
+ animation: slide 2s infinite;
+ opacity: .3;
+ -webkit-animation: slide 2s infinite;
+ filter: blur(1px);
+ -webkit-filter: blur(1px);
+}
+@keyframes slide {
+    0% {
+        transform: rotate(0deg);
+        left: 5%;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+    50% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        left: 50%;
+}
+    100% {
+        transform: rotate(60deg);
+        left: 95%;
+        -webkit-transform: rotate(60deg);
+        -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+        -o-transform: rotate(60deg);
+}
+}
+
+.alsotoberemoved .histholder{
+  min-height: 400px;
+  max-height: 550px;
+  overflow-y: auto;
+}
+.alsotoberemoved{
+    display: none;
+}
+.toberemoved{
+    display: none;
+}
+.morecontent{
+    min-height: 70vh;
+    display: none;
+}
+
+.my-notes-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    
+}
+.my-notes-container{
+    width: 100%;
+    margin: auto;
+}
+#notes-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow-y: auto;
+}
+.note{
+    background-color: #42434892;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#add-btn{
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background-color: green;
+}
+.note-buttons button{
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.edit-btn{
+    background-color: green;
+   
+}
+.delete-btn{
+    background-color: red;
+}
+#add-note{
+    margin: auto;
+}
+#note-text{
+    width: 100%;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: rgba(61, 60, 60, 0.572);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    resize: vertical;
+    margin-left: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+.heart-bit{
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background-color: red;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    z-index: 1000;
+    animation:heart-pump 0.5s linear infinite ;
+    -webkit-animation:heart-pump 0.5s linear infinite ;
+}
+.heart-bit::before,
+.heart-bit::after{
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.heart-bit::before {
+    top: -10px;
+    left: 0;
+}
+
+.heart-bit::after {
+    top: 0;
+    left: 10px;
+}
+
+
+@keyframes heart-pump {
+    0%, 100% {
+        transform: scale(0.5) rotate(-45deg);
+        -webkit-transform: scale(0.5) rotate(-45deg);
+        -moz-transform: scale(0.5) rotate(-45deg);
+        -ms-transform: scale(0.5) rotate(-45deg);
+        -o-transform: scale(0.5) rotate(-45deg);
+}
+    25% {
+        transform: scale(0.6) rotate(-45deg);
+        -webkit-transform: scale(0.6) rotate(-45deg);
+        -moz-transform: scale(0.6) rotate(-45deg);
+        -ms-transform: scale(0.6) rotate(-45deg);
+        -o-transform: scale(0.6) rotate(-45deg);
+}
+    50% {
+        transform: scale(0.4) rotate(-45deg);
+        -webkit-transform: scale(0.4) rotate(-45deg);
+        -moz-transform: scale(0.4) rotate(-45deg);
+        -ms-transform: scale(0.4) rotate(-45deg);
+        -o-transform: scale(0.4) rotate(-45deg);
+}
+    75% {
+        transform: scale(0.5) rotate(-45deg);
+        -webkit-transform: scale(0.5) rotate(-45deg);
+        -moz-transform: scale(0.5) rotate(-45deg);
+        -ms-transform: scale(0.5) rotate(-45deg);
+        -o-transform: scale(0.5) rotate(-45deg);
+}
+}
+
+button{
+    user-select: none;
+}
+
+.body-cont-container {
+    height: calc(100svh - 16svh);
+    overflow-y: auto;
+   
+}
+
+.topfixed {
+    height: 16vh;
+    z-index:100000;
+    overflow: hidden;
+}

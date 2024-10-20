@@ -1,0 +1,39 @@
+
+@media (min-width: 400px) {
+.ai-active {
+    position: absolute;
+    bottom: 0.5%;
+    left: 50%;
+    width: 95%;
+    max-width: 400px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    margin: auto;
+}
+body{
+    background-color: rgb(63, 62, 62);
+}
+}
+@media (max-width: 900px) {
+    body{
+        background-color: rgb(21, 27, 36);
+    }
+    }
+@media (min-height: 200px) and (max-height: 600px) {
+    .border{
+        width:100vw ;
+        min-height: 95vh;
+        margin: auto;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        padding: 2px;
+        padding-top: 10px;
+       position: relative;
+    }
+}
